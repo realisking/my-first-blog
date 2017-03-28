@@ -1,11 +1,19 @@
-<div>
-	<h1><a href = "/">炉石传说</a></h1>
-</div>
+<html>
+    <head>
+        <title>艾泽拉斯国家地理</title>
+    </head>
+    
+    <body>
+    	<div>
+    		<h1><a href = "/">炉石传说</a></h1>
+    	</div>
 
-{% for post in posts %}
-	<div>
-		<p>published: {{ post.published_date }}</p>
-		<h2><a href = "">{{ post.title }}</a></h1>
-		<p>{{ post.text|linebreaksbr }}</p>
-	</div>
-{% endfor %}
+        {% for post in posts %}
+			<div>
+				<p>published: {{ post.published_date }}</p>
+				<h2><a href = "">{{ post.title }}</a></h1>
+				<p>{{ post.text|linebreaksbr }}</p>
+			</div>
+		{% endfor %}
+    </body>
+</html>
